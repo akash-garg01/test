@@ -1,0 +1,63 @@
+----------------------------------------------------------------------------------------------------
+Current Time      2018-08-06 16:19:08Z
+CTOP Window       2018-08-06 21:00:00Z to 2018-08-07 01:59:59Z
+Airport Flow      DFW South Flow
+
+Reading Parameters from Excel File
+
+Capacity Information in Each 15-mins Time Periods
+BRDJE  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9
+VKTRY  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9
+BOOVE  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8
+BEREE  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8
+
+ADL File     : Data\ADL_Files\dfw__.lcdm.06161908.01.all.gamf
+TOS File     : Data\cannedrouteexport. 20180606_1707.csv
+Output Folder: Data\Model_Output_DFW_South\
+----------------------------------------------------------------------------------------------------
+Input CTOP Parameters Checking 
+CTOP Parameters Checking Passed 
+----------------------------------------------------------------------------------------------------
+TOS File Analysis
+Map route to the arrival fix is successful
+For the Following Airline/Station, in a TOS Set at Least Two Routes Cross the Same Arrival Fix
+    airline_code departure_station   AFIX
+10           AAL               ATL  BRDJE
+11           AAL               ATL  BRDJE
+71           ENY               GSO  BEREE
+72           ENY               GSO  BEREE
+85           AAL               ICT  VKTRY
+86           AAL               ICT  VKTRY
+88           ASH               ICT  BRDJE
+89           ASH               ICT  BRDJE
+90           ENY               ICT  VKTRY
+92           ENY               ICT  VKTRY
+114          AAL               LAX  VKTRY
+115          AAL               LAX  VKTRY
+142          ENY               MEM  BRDJE
+143          ENY               MEM  BRDJE
+199          AAL               SAN  VKTRY
+200          AAL               SAN  VKTRY
+221          ENY               SWO  BRDJE
+222          ENY               SWO  BRDJE
+237          AAL               VPS  BEREE
+238          AAL               VPS  BEREE
+----------------------------------------------------------------------------------------------------
+The Following Flights Don't Have EAFT Information
+        ACID  ORIG DCENTR      ETD      ETA
+75   ENY3612   SPS    ZFW  A061555  E061619
+217   AAL221  EHAM    ZEU  A060853  E061836
+----------------------------------------------------------------------------------------------------
+The Following Flights Have Been Cancelled
+Empty DataFrame
+Columns: [ACID, ETD, AFIX, EAFT]
+Index: []
+----------------------------------------------------------------------------------------------------
+Demand Capacity Imbalance Information
+From 08-06 21:45 to 08-06 21:59 at BRDJE, demand  13 exceed capacity   9 ( 4)
+From 08-06 22:15 to 08-06 22:29 at BRDJE, demand  13 exceed capacity   9 ( 4)
+From 08-07 01:30 to 08-07 01:44 at BRDJE, demand  12 exceed capacity   9 ( 3)
+From 08-07 00:00 to 08-07 00:14 at VKTRY, demand  10 exceed capacity   9 ( 1)
+From 08-06 22:00 to 08-06 22:14 at BEREE, demand  11 exceed capacity   8 ( 3)
+From 08-06 23:45 to 08-06 23:59 at BEREE, demand   9 exceed capacity   8 ( 1)
+In total 16 FCA Capacity Violations 

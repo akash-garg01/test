@@ -1,0 +1,131 @@
+----------------------------------------------------------------------------------------------------
+Current Time 2018-07-16 10:08:59
+----------------------------------------------------------------------------------------------------
+TOS File Analysis
+Map route to the arrival fix is successful
+For the Following Airline/Station, in a TOS Set At Least Two Routes Cross the Same Arrival Fix
+    airline_code departure_station   AFIX
+10           AAL               ATL  BRDJE
+11           AAL               ATL  BRDJE
+71           ENY               GSO  BEREE
+72           ENY               GSO  BEREE
+85           AAL               ICT  VKTRY
+86           AAL               ICT  VKTRY
+88           ASH               ICT  BRDJE
+89           ASH               ICT  BRDJE
+90           ENY               ICT  VKTRY
+92           ENY               ICT  VKTRY
+114          AAL               LAX  VKTRY
+115          AAL               LAX  VKTRY
+142          ENY               MEM  BRDJE
+143          ENY               MEM  BRDJE
+199          AAL               SAN  VKTRY
+200          AAL               SAN  VKTRY
+221          ENY               SWO  BRDJE
+222          ENY               SWO  BRDJE
+237          AAL               VPS  BEREE
+238          AAL               VPS  BEREE
+----------------------------------------------------------------------------------------------------
+Input CTOP Parameters Checking 
+CTOP Parameters Checking Passed 
+----------------------------------------------------------------------------------------------------
+The Following Flights Don't Have EAFT Information
+        ACID ORIG DCENTR      ETD      ETA
+3     NKS972  PHX    ZAB  A160753  A160948
+10    EJA619  DAL    ZFW  L161012  L161024
+23   AAL2603  SMF    ZOA  A160741  E161045
+506    N59AP  DAL    ZFW  L161930  L161942
+----------------------------------------------------------------------------------------------------
+The Following Flights Have Been Cancelled
+        ACID                 ETD   AFIX                EAFT FX
+35   ENY4091 2018-07-16 10:16:00  BOOVE 2018-07-16 10:42:00  Y
+210  ASH5913 2018-07-16 13:03:00  VKTRY 2018-07-16 14:11:00  Y
+----------------------------------------------------------------------------------------------------
+Demand Capacity Imbalance Information
+From 07-16 12:15 to 07-16 12:29 at BRDJE, demand  12 exceed capacity  10 ( 2)
+From 07-16 12:30 to 07-16 12:44 at BRDJE, demand  11 exceed capacity  10 ( 1)
+From 07-16 13:45 to 07-16 13:59 at BRDJE, demand  20 exceed capacity  10 (10)
+From 07-16 14:00 to 07-16 14:14 at BRDJE, demand  13 exceed capacity  10 ( 3)
+From 07-16 16:00 to 07-16 16:14 at VKTRY, demand  11 exceed capacity   9 ( 2)
+From 07-16 12:00 to 07-16 12:14 at BEREE, demand  10 exceed capacity   8 ( 2)
+From 07-16 12:15 to 07-16 12:29 at BEREE, demand  10 exceed capacity   8 ( 2)
+From 07-16 18:00 to 07-16 18:14 at BEREE, demand  10 exceed capacity   8 ( 2)
+In total 24 FCA Capacity Violations 
+----------------------------------------------------------------------------------------------------
+Models 1-3 Will be Solved Sequentially to Minimize Our Three Objectives, Whose Importances Are in Decreasing Order
+----------------------------------------------------------------------------------------------------
+Model 1: Miminize # of FCA Violations
+Problem Status             : 6
+Problem Status, Explained  : mip_optimal
+Solving This Instance Takes: 0.06 seconds
+# of FCA Violations        :    5
+# of Rerouted Flights      :   76
+# of Reroute Mileages      : 2566  miles
+----------------------------------------------------------------------------------------------------
+Model 2: Miminize # of Rerouted Flights
+Problem Status             : 6
+Problem Status, Explained  : mip_optimal
+Solving This Instance Takes: 0.05 seconds
+# of FCA Violations        :    5
+# of Rerouted Flights      :   20
+# of Reroute Mileages      :  631  miles
+----------------------------------------------------------------------------------------------------
+Model 3: Miminize Total Reroute Mileages
+Problem Status             : 6
+Problem Status, Explained  : mip_optimal
+Solving This Instance Takes: 0.06 seconds
+# of FCA Violations        :    5
+# of Rerouted Flights      :   20
+# of Reroute Mileages      :  582  miles
+----------------------------------------------------------------------------------------------------
+(  1) flight  ENY3845 from  GGG ETD 07-16 11:49 rerouted from BEREE to BRDJE route ID  11 ->  13 ( -10)
+(  2) flight  ASH5733 from  LFT ETD 07-16 11:31 rerouted from BEREE to BRDJE route ID  11 ->  47 (  15)
+(  3) flight  ENY3671 from  XNA ETD 07-16 11:43 rerouted from BRDJE to VKTRY route ID  11 ->  13 (  39)
+(  4) flight  AAL2261 from  STL ETD 07-16 11:16 rerouted from BRDJE to VKTRY route ID   1 ->  12 (  52)
+(  5) flight  ASQ2869 from  JLN ETD 07-16 11:54 rerouted from BRDJE to VKTRY route ID  11 ->  12 (   9)
+(  6) flight  ASH5951 from  HSV ETD 07-16 11:12 rerouted from BEREE to BRDJE route ID  44 ->  14 (-118)
+(  7) flight  AAL1102 from  MSY ETD 07-16 11:37 rerouted from BEREE to BRDJE route ID   1 ->  16 (  84)
+(  8) flight  AAL1090 from  TUL ETD 07-16 12:08 rerouted from BRDJE to VKTRY route ID  12 ->  13 (  26)
+(  9) flight  ENY4112 from  CID ETD 07-16 12:20 rerouted from BRDJE to VKTRY route ID  11 ->  12 (  10)
+( 10) flight  AAL1572 from  TUL ETD 07-16 13:19 rerouted from BRDJE to VKTRY route ID  12 ->  13 (  26)
+( 11) flight  ENY3794 from  LIT ETD 07-16 13:13 rerouted from BRDJE to BEREE route ID  11 ->  13 (  83)
+( 12) flight  AAL1625 from  ORD ETD 07-16 12:22 rerouted from BRDJE to VKTRY route ID   2 ->  13 (  68)
+( 13) flight  ENY3582 from  MSN ETD 07-16 12:19 rerouted from BRDJE to VKTRY route ID  11 ->  12 (  23)
+( 14) flight  AAL1302 from  RDU ETD 07-16 11:51 rerouted from BRDJE to BEREE route ID   2 ->  14 (  69)
+( 15) flight  AAL2621 from  MKE ETD 07-16 12:13 rerouted from BRDJE to VKTRY route ID   1 ->  11 (  80)
+( 16) flight  AAL1344 from  CHS ETD 07-16 12:06 rerouted from BRDJE to BEREE route ID  13 ->  12 (  19)
+( 17) flight  AAL2535 from  SAN ETD 07-16 13:50 rerouted from VKTRY to BOOVE route ID  11 ->   1 (  13)
+( 18) flight  ASH5780 from  LBB ETD 07-16 15:40 rerouted from VKTRY to BOOVE route ID  11 ->  12 (  42)
+( 19) flight  ENY3922 from  GGG ETD 07-16 17:56 rerouted from BEREE to BRDJE route ID  11 ->  13 ( -10)
+( 20) flight  ASH5731 from  HOU ETD 07-16 17:44 rerouted from BEREE to BOOVE route ID   1 ->  14 (  62)
+----------------------------------------------------------------------------------------------------
+  9 flights reroute from BRDJE to VKTRY
+  3 flights reroute from BRDJE to BEREE
+  2 flights reroute from VKTRY to BOOVE
+  5 flights reroute from BEREE to BRDJE
+  1 flights reroute from BEREE to BOOVE
+Total Number of Rerouted Flights:  20
+----------------------------------------------------------------------------------------------------
+ 5 FCA capacity violations at BRDJE at 07-16 13:45
+Total Number of FCA Capacity Violations:   5
+----------------------------------------------------------------------------------------------------
+525 Flights cross four DFW corner post during CTOP planning horizon
+ 91 Flights are OA flights, they are exempted
+434 Flights are AA flights in total
+  0 AA Flights have landed by the time of running this fix balancing program
+ 35 AA Flights have taken off by the time of running this fix balancing program
+ 40 AA Flights are exempted due to various reasons
+359 AA Flights can be potentially rerouted if they have TOS set submitted
+Among the above 359 AA Flights, 200 actually have TOS sets and reroutable
+----------------------------------------------------------------------------------------------------
+Summary: FCA Capacity Violation Can Decrease from  24 to  5 at the Cost of Extra 582.0 En Route Miles
+----------------------------------------------------------------------------------------------------
+Performing Maximum Mileage Sensitivity Analysis
+   Mileage Max FCA Violations Rerouted Flights Reroute Mileages
+0          0.0             21                3             -138
+1         50.0             10               15              186
+2        100.0              5               20              582
+3        150.0              5               19              576
+4        200.0              5               19              576
+5        300.0              5               19              576
+----------------------------------------------------------------------------------------------------

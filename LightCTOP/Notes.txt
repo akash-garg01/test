@@ -1,0 +1,32 @@
+"""
+Local_Time.hour 'Bank 7':['16:00','18:14'],
+"""
+
+
+#Cap = {'BYP':[7,8,8,8,8,7,8,6,5,6,8,7,8,8,8,7], #FCA1  NE  BRDJE
+#       'UKW':[7,8,8,7,6,4,7,8,8,7,7,8,7,7,7,8], #FCA2  NW  VKTRY
+#       'JEN':[7,7,6,7,6,6,7,7,7,7,6,6,7,7,7,7], #FCA3  SW  BOOVE
+#       'CQY':[7,7,7,2,7,7,5,7,7,7,7,7,7,7,7,7]  #FCA4  SE  BEREE
+#      }
+
+# FLs['Carrier']      = FLs['ACID'].str.split('\d*(\D+)', expand=True).loc[:,1]
+# FLs['ID']           = FLs['ACID'].str.split('\d*(\D+)', expand=True).loc[:,2]
+
+#FLs['Carrier']      = FLs['ACID'].str[0:3]
+#FLs['ID']           = FLs['ACID'].str[3:]
+
+# if len(Reroutables[Condition]) > M[key][t]:
+#     print imbalance_info % (
+#     Interval_Start.strftime("%H:%M:%S"), (Interval_End - timedelta(seconds=1)).strftime("%H:%M:%S"), \
+#     key, len(Reroutables[Condition]), M[key][t])
+
+    #plt.tight_layout()
+    # f, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, sharey = 'row' )
+    #f, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(16, 9) ) #best
+    #f, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(13.33, 7.5))
+
+# if np.isnan( Q[index, route_count] ):  #Q will be NAN
+#     print ORIG, FLs_index, ACID
+
+    # CTOP_FLs[Condition][['ACID', 'ORIG', 'ETD', 'AFIX', 'AFIX_New','Route_ID_New',
+    #                      'Extra Wind Miles']].to_csv('Data\\Reroute_Results.csv', index=False)

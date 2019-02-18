@@ -1,0 +1,133 @@
+----------------------------------------------------------------------------------------------------
+Current Time      2018-07-07 10:00:33Z
+CTOP Window       2018-07-07 10:00:00Z to 2018-07-07 17:59:59Z
+Airport Flow      DFW North Flow
+
+Reading Parameters from Excel File
+
+Capacity Information in Each 15-mins Time Periods
+BRDJE  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8
+VKTRY  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8
+BOOVE  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9
+BEREE 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10
+
+ADL File     : Data\ADL_Files\dfw__.lcdm.07100033.01.all.gamf
+TOS File     : Data\canned_route_raw_data_dfw_northflow_04262018.csv
+Output Folder: Data\\Model_Output_DFW_North\\
+----------------------------------------------------------------------------------------------------
+Input CTOP Parameters Checking 
+CTOP Parameters Checking Passed 
+----------------------------------------------------------------------------------------------------
+TOS File Analysis
+Map route to the arrival fix is successful
+For the Following Airline/Station, in a TOS Set at Least Two Routes Cross the Same Arrival Fix
+   airline_code departure_station   AFIX
+9           AAL               HSV  BEREE
+10          AAL               HSV  BRDJE
+23          AAL               ORD  BRDJE
+24          AAL               ORD  VKTRY
+41          AAL               TUL  BRDJE
+42          AAL               TUL  VKTRY
+43          ASH               TUL  BRDJE
+44          ASH               TUL  VKTRY
+57          AAL               HSV  BEREE
+58          AAL               HSV  BRDJE
+79          AAL               ORD  BRDJE
+80          AAL               ORD  VKTRY
+85          AAL               TUL  BRDJE
+86          AAL               TUL  VKTRY
+87          ASH               TUL  BRDJE
+88          ASH               TUL  VKTRY
+----------------------------------------------------------------------------------------------------
+The Following Flights Don't Have EAFT Information
+        ACID  ORIG DCENTR      ETD      ETA
+1     AAL996  SAEZ    ZSA  E062322  A070950
+2     AAL962  SBGR    ZSA  E070003  A070953
+3    AAL1122  SKBO    ZCO  E070449  A070957
+4     NKS972   PHX    ZAB  A070808  A071000
+5     ASA660   SEA    ZSE  A070636  E071001
+7    AAL2254   LAX    ZLA  A070729  E071006
+19    UPS768   SDF    ZID  A070917  E071045
+221  SKW3165   GRK    ZFW  L071345  L071436
+458  ASQ2851   LAW    ZFW  L071853  L071916
+----------------------------------------------------------------------------------------------------
+The Following Flights Have Been Cancelled
+        ACID                 ETD   AFIX                EAFT FX
+80   AAL1461 2018-07-07 09:43:00  VKTRY 2018-07-07 12:19:00  Y
+95   AAL2605 2018-07-07 10:18:00  BRDJE 2018-07-07 12:21:00  Y
+185  ASH5734 2018-07-07 13:26:00  BEREE 2018-07-07 13:53:00  Y
+186  ASH5753 2018-07-07 13:28:00  VKTRY 2018-07-07 14:02:00  Y
+187  ASH5858 2018-07-07 13:18:00  BOOVE 2018-07-07 14:04:00  Y
+191  ASH5829 2018-07-07 12:50:00  VKTRY 2018-07-07 14:06:00  Y
+234  AAL2784 2018-07-07 12:24:00  BEREE 2018-07-07 14:49:00  Y
+----------------------------------------------------------------------------------------------------
+Demand Capacity Imbalance Information
+From 07-07 12:30 to 07-07 12:44 at BRDJE, demand  15 exceed capacity   8 ( 7)
+From 07-07 13:45 to 07-07 13:59 at BRDJE, demand  15 exceed capacity   8 ( 7)
+From 07-07 14:00 to 07-07 14:14 at BRDJE, demand  14 exceed capacity   8 ( 6)
+From 07-07 16:00 to 07-07 16:14 at VKTRY, demand   9 exceed capacity   8 ( 1)
+From 07-07 12:00 to 07-07 12:14 at BEREE, demand  11 exceed capacity  10 ( 1)
+In total 22 FCA Capacity Violations 
+----------------------------------------------------------------------------------------------------
+Models 1-3 Will be Solved Sequentially to Minimize Our Three Objectives, Whose Importances Are in Decreasing Order
+----------------------------------------------------------------------------------------------------
+Model 1: Miminize # of FCA Violations
+Problem Status             : 6
+Problem Status, Explained  : mip_optimal
+Solving This Instance Takes: 0.02 seconds
+# of FCA Violations        :   17
+# of Rerouted Flights      :   17
+# of Reroute Mileages      : -274  miles
+----------------------------------------------------------------------------------------------------
+Model 2: Miminize # of Rerouted Flights
+Problem Status             : 6
+Problem Status, Explained  : mip_optimal
+Solving This Instance Takes: 0.00 seconds
+# of FCA Violations        :   17
+# of Rerouted Flights      :    5
+# of Reroute Mileages      :   85  miles
+----------------------------------------------------------------------------------------------------
+Model 3: Miminize Total Reroute Mileages
+Problem Status             : 6
+Problem Status, Explained  : mip_optimal
+Solving This Instance Takes: 0.01 seconds
+# of FCA Violations        :   17
+# of Rerouted Flights      :    5
+# of Reroute Mileages      :   85  miles
+----------------------------------------------------------------------------------------------------
+(  1) flight  AAL1090 from  TUL ETD 07-07 12:08 rerouted from BRDJE to VKTRY route ID  22 ->  28 (  34)
+(  2) flight  AAL1302 from  RDU ETD 07-07 11:51 rerouted from BRDJE to BEREE route ID  22 ->  24 (  10)
+(  3) flight  AAL1344 from  CHS ETD 07-07 12:06 rerouted from BRDJE to BEREE route ID  14 ->  22 ( -40)
+(  4) flight  AAL2204 from  RIC ETD 07-07 11:55 rerouted from BRDJE to BEREE route ID  25 ->  27 (  11)
+(  5) flight  AAL2301 from  OKC ETD 07-07 15:50 rerouted from VKTRY to BRDJE route ID  22 ->  26 (  70)
+----------------------------------------------------------------------------------------------------
+  1 flights reroute from BRDJE to VKTRY
+  3 flights reroute from BRDJE to BEREE
+  1 flights reroute from VKTRY to BRDJE
+Total Number of Rerouted Flights:   5
+----------------------------------------------------------------------------------------------------
+ 6 FCA capacity violations at BRDJE at 07-07 12:30
+ 7 FCA capacity violations at BRDJE at 07-07 13:45
+ 3 FCA capacity violations at BRDJE at 07-07 14:00
+ 1 FCA capacity violations at BEREE at 07-07 12:00
+Total Number of FCA Capacity Violations:  17
+----------------------------------------------------------------------------------------------------
+371 Flights cross four DFW corner post during CTOP planning horizon
+ 46 Flights are OA flights, they are exempted
+325 Flights are AA flights in total
+  0 AA Flights have landed by the time of running this fix balancing program
+ 25 AA Flights have taken off by the time of running this fix balancing program
+ 77 AA Flights are exempted due to various reasons
+223 AA Flights can be potentially rerouted if they have TOS set submitted
+Among the above 223 AA Flights,  45 actually have TOS sets and reroutable
+----------------------------------------------------------------------------------------------------
+Summary: FCA Capacity Violation Can Decrease from  22 to 17 at the Cost of Extra  85.0 En Route Miles
+----------------------------------------------------------------------------------------------------
+Performing Maximum Mileage Sensitivity Analysis
+   Mileage Max FCA Violations Rerouted Flights Reroute Mileages
+0          0.0             21                1              -40
+1        100.0             17                5               85
+2        200.0             14                8              544
+3        300.0             14                8              544
+4        400.0             14                8              544
+----------------------------------------------------------------------------------------------------

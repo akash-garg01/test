@@ -1,0 +1,144 @@
+----------------------------------------------------------------------------------------------------
+Current Time      2018-07-19 09:18:36Z
+CTOP Window       2018-07-19 12:00:00Z to 2018-07-19 15:59:59Z
+Airport Flow      CLT South Flow
+
+Reading Parameters from Excel File
+
+Capacity Information in Each 15-mins Time Periods
+CHSLY  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5
+PARQR  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4
+FILPZ  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4
+JONZE  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3
+BANKR  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2
+STOCR  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3
+MLLET  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2
+
+ADL File     : Data\ADL_Files\clt__.lcdm.19091836.01.all.gamf
+TOS File     : Data\CLT CTOP Routes Final V 0 1 BACKUP.csv
+Output Folder: Data\\Model_Output_CLT_South\\
+----------------------------------------------------------------------------------------------------
+Input CTOP Parameters Checking 
+CTOP Parameters Checking Passed 
+----------------------------------------------------------------------------------------------------
+TOS File Analysis
+Map route to the arrival fix is NOT successful
+For the Following Airline/Station, in a TOS Set at Least Two Routes Cross the Same Arrival Fix
+   airline_code departure_station  AFIX
+44           TE               PGV  None
+45           TE               PGV  None
+----------------------------------------------------------------------------------------------------
+The Following Flights Don't Have EAFT Information
+        ACID  ORIG DCENTR      ETD      ETA
+0    UPS1284   PHL    ZNY  A190719  A190824
+61    GAJ870   SDF    ZID  P190940  E191054
+72    N711ST   CRW    ZID  P191043  E191153
+79      N3NC   RDU    ZDC  P191129  E191202
+154   N139DE  16GA    ZTL  L191140  L191307
+211  SRY7010   PKB    ZID  L191310  E191417
+275   N281WB   FXE    ZMA  L191334  E191551
+329   GAJ854   AVL    ZTL  L191610  E191633
+332  SRY2010   BKW    ZID  L191603  E191652
+343   N712GK   SVH    ZTL  L191710  E191718
+360    N65PX   MEB    ZDC  L191710  E191730
+404    N73DB   AVL    ZTL  L191800  E191820
+490     N3NC   RDU    ZDC  L191914  E191949
+535  PDT4956   TRI    ZTL  L192016  L192051
+581  SRY1181   SGJ    ZJX  L191958  E192127
+606   EJA614   GSO    ZTL  L192206  E192224
+785   LBQ825   RDU    ZDC  P200204  E200240
+----------------------------------------------------------------------------------------------------
+The Following Flights Have Been Cancelled
+Empty DataFrame
+Columns: [ACID, ETD, AFIX, EAFT]
+Index: []
+----------------------------------------------------------------------------------------------------
+Demand Capacity Imbalance Information
+From 07-19 12:00 to 07-19 12:14 at CHSLY, demand   9 exceed capacity   5 ( 4)
+From 07-19 13:30 to 07-19 13:44 at CHSLY, demand   8 exceed capacity   5 ( 3)
+From 07-19 13:45 to 07-19 13:59 at CHSLY, demand   6 exceed capacity   5 ( 1)
+From 07-19 14:00 to 07-19 14:14 at CHSLY, demand   6 exceed capacity   5 ( 1)
+From 07-19 14:15 to 07-19 14:29 at CHSLY, demand   7 exceed capacity   5 ( 2)
+From 07-19 15:45 to 07-19 15:59 at CHSLY, demand   9 exceed capacity   5 ( 4)
+From 07-19 12:00 to 07-19 12:14 at PARQR, demand   6 exceed capacity   4 ( 2)
+From 07-19 13:45 to 07-19 13:59 at PARQR, demand   5 exceed capacity   4 ( 1)
+From 07-19 12:15 to 07-19 12:29 at FILPZ, demand   6 exceed capacity   4 ( 2)
+From 07-19 14:00 to 07-19 14:14 at FILPZ, demand   6 exceed capacity   4 ( 2)
+From 07-19 14:15 to 07-19 14:29 at FILPZ, demand   5 exceed capacity   4 ( 1)
+From 07-19 15:30 to 07-19 15:44 at FILPZ, demand   6 exceed capacity   4 ( 2)
+From 07-19 15:45 to 07-19 15:59 at FILPZ, demand   5 exceed capacity   4 ( 1)
+From 07-19 12:15 to 07-19 12:29 at JONZE, demand   4 exceed capacity   3 ( 1)
+From 07-19 13:45 to 07-19 13:59 at BANKR, demand   4 exceed capacity   2 ( 2)
+From 07-19 15:30 to 07-19 15:44 at BANKR, demand   6 exceed capacity   2 ( 4)
+From 07-19 14:15 to 07-19 14:29 at STOCR, demand   4 exceed capacity   3 ( 1)
+From 07-19 14:00 to 07-19 14:14 at MLLET, demand   3 exceed capacity   2 ( 1)
+In total 35 FCA Capacity Violations 
+----------------------------------------------------------------------------------------------------
+Models 1-3 Will be Solved Sequentially to Minimize Our Three Objectives, Whose Importances Are in Decreasing Order
+----------------------------------------------------------------------------------------------------
+Model 1: Miminize # of FCA Violations
+Problem Status             : 6
+Problem Status, Explained  : mip_optimal
+Solving This Instance Takes: 0.00 seconds
+# of FCA Violations        :   35
+# of Rerouted Flights      :    0
+# of Reroute Mileages      :    0  miles
+----------------------------------------------------------------------------------------------------
+Model 2: Miminize # of Rerouted Flights
+Problem Status             : 6
+Problem Status, Explained  : mip_optimal
+Solving This Instance Takes: 0.00 seconds
+# of FCA Violations        :   35
+# of Rerouted Flights      :    0
+# of Reroute Mileages      :    0  miles
+----------------------------------------------------------------------------------------------------
+Model 3: Miminize Total Reroute Mileages
+Problem Status             : 6
+Problem Status, Explained  : mip_optimal
+Solving This Instance Takes: 0.00 seconds
+# of FCA Violations        :   35
+# of Rerouted Flights      :    0
+# of Reroute Mileages      :    0  miles
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Total Number of Rerouted Flights:   0
+----------------------------------------------------------------------------------------------------
+ 4 FCA capacity violations at CHSLY at 07-19 12:00
+ 3 FCA capacity violations at CHSLY at 07-19 13:30
+ 1 FCA capacity violations at CHSLY at 07-19 13:45
+ 1 FCA capacity violations at CHSLY at 07-19 14:00
+ 2 FCA capacity violations at CHSLY at 07-19 14:15
+ 4 FCA capacity violations at CHSLY at 07-19 15:45
+ 2 FCA capacity violations at PARQR at 07-19 12:00
+ 1 FCA capacity violations at PARQR at 07-19 13:45
+ 2 FCA capacity violations at FILPZ at 07-19 12:15
+ 2 FCA capacity violations at FILPZ at 07-19 14:00
+ 1 FCA capacity violations at FILPZ at 07-19 14:15
+ 2 FCA capacity violations at FILPZ at 07-19 15:30
+ 1 FCA capacity violations at FILPZ at 07-19 15:45
+ 1 FCA capacity violations at JONZE at 07-19 12:15
+ 2 FCA capacity violations at BANKR at 07-19 13:45
+ 4 FCA capacity violations at BANKR at 07-19 15:30
+ 1 FCA capacity violations at STOCR at 07-19 14:15
+ 1 FCA capacity violations at MLLET at 07-19 14:00
+Total Number of FCA Capacity Violations:  35
+----------------------------------------------------------------------------------------------------
+209 Flights cross four DFW corner post during CTOP planning horizon
+ 28 Flights are OA flights, they are exempted
+181 Flights are AA flights in total
+  0 AA Flights have landed by the time of running this fix balancing program
+  1 AA Flights have taken off by the time of running this fix balancing program
+ 10 AA Flights are exempted due to various reasons
+170 AA Flights can be potentially rerouted if they have TOS set submitted
+Among the above 170 AA Flights,   0 actually have TOS sets and reroutable
+----------------------------------------------------------------------------------------------------
+Summary: FCA Capacity Violation Can Decrease from  35 to 35 at the Cost of Extra   0.0 En Route Miles
+----------------------------------------------------------------------------------------------------
+Performing Maximum Mileage Sensitivity Analysis
+   Mileage Max FCA Violations Rerouted Flights Reroute Mileages
+0          0.0             35                0                0
+1        100.0             35                0                0
+2        200.0             35                0                0
+3        300.0             35                0                0
+4        400.0             35                0                0
+----------------------------------------------------------------------------------------------------

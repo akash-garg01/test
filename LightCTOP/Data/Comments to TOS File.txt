@@ -1,0 +1,2 @@
+1. Make sure the column names are exactly the same as the DFW TOS
+2. Airline names AAL 

@@ -1,0 +1,1 @@
+id,airline_code,departure_station,arrival_station,route_id_in_FOS,miles,Wind Miles,route_string(excluding departure and arrival stations)
